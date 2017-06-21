@@ -1,0 +1,41 @@
+{
+    "name": "vscode-typescript-ast-explorer",
+    "displayName": "TypeScript AST Explorer",
+    "description": "An Explorer view that displays the AST of the currently active TypeScript document",
+    "version": "1.0.0",
+    "publisher": "krizzdewizz",
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:typescript"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "views": {
+            "explorer": [
+                {
+                    "id": "typescript-ast-explorer.view",
+                    "name": "TypeScript AST"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "dependencies": {
+        "typescript": "*"
+    },
+    "devDependencies": {
+        "tslint": "*",
+        "tslint-microsoft-contrib": "*",
+        "vscode": "^1.0.0",
+        "@types/node": "^6.0.40"
+    }
+}
