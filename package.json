@@ -37,5 +37,9 @@
         "tslint-microsoft-contrib": "*",
         "vscode": "^1.0.0",
         "@types/node": "^6.0.40"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/krizzdewizz/vscode-typescript-ast-explorer.git"
     }
 }
